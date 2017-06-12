@@ -1,19 +1,19 @@
 
 interfaces {
     $interface$ {
-        mtu $media_MTU$;           /* default = 1514 */
+        mtu $media_MTU$;           /* default for Ethernet = 1514 -- check below */
         unit 0 {
             family inet {
-                mtu $inet_MTU$;    /* default = 1500 */
+                mtu $inet_MTU$;    /* default for Ethernet = 1500 */
             }
             family iso {
-                mtu $iso_MTU$;     /* default = 1497 */
+                mtu $iso_MTU$;     /* default for Ethernet = 1497 */
             }
             family inet6 {
-                mtu $inet6_MTU$;   /* default = 1500 */
+                mtu $inet6_MTU$;   /* default for Ethernet = 1500 */
             }
             family mpls {
-                mtu $mpls_MTU$;    /* default = 1488 */
+                mtu $mpls_MTU$;    /* default for Ethernet = 1488 */
             }
         }
     }
